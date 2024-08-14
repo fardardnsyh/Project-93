@@ -1,0 +1,111 @@
+.icons {
+  color: #f5faff !important;
+  font-size: 26px !important;
+  position: relative;
+  z-index: 3;
+}
+
+.icons:hover {
+  color: #002140 !important;
+  z-index: 5;
+}
+
+.iconsBottom {
+  font-size: 22px !important;
+  color: #f5faff !important;
+}
+
+.iconsBottom:hover {
+  color: #002140 !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.title {
+  /* color: #000; */
+  color: #e6eff2;
+  font-size: 26px;
+  /* color: #f5faff; */
+  position: relative;
+  z-index: 3;
+}
+
+.card {
+  width: 360px;
+  height: min-content;
+  border-radius: 10px;
+  padding: 15px 20px 10px 20px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #eda35a;
+  background-color: rgba(108, 135, 170, 0.6);
+}
+
+.card:hover .cardsBg,
+.dropdown:hover .cardsBg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.ant-dropdown-menu-vertical {
+  background-color: red;
+}
+
+.cardsBg {
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  border-radius: 50%;
+  z-index: 1;
+
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.cardButtom {
+  margin-top: 20px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 3;
+  border-top: 1px solid #f5faff;
+}
+
+.cardButtomElem {
+  width: 50%;
+  text-align: center;
+  font-size: 22px !important;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.ulList {
+  list-style: none;
+  max-height: 200px;
+  overflow: auto; 
+  padding: 5px 0;
+}
+
+.tabDeadl {
+  display: flex;
+  align-items: center;
+  max-height: 200px;
+  overflow: auto; 
+  gap: 5px;
+  padding: 5px 0;
+}
+
+.tabs {
+  font-size: 18px;
+}

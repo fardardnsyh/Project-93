@@ -1,0 +1,110 @@
+.layoutWrapper {
+  background-color: transparent;
+}
+
+.section {
+  width: 100%;
+}
+.todoButton {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 8px 17px;
+  color: #000;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+  font-weight: 300;
+}
+
+.headerEdit {
+  margin-bottom: 30px;
+}
+.todoButton:hover {
+  background-color: #2b558c;
+  color: #f5faff;
+  border-color: #2b558c;
+}
+
+.todoHeader {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.conteinForForm {
+  display: flex;
+  gap: 15px;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.group {
+  width: 300px;
+  border-radius: 20px;
+  background-color: #ebecf0;
+}
+
+.headerCard {
+  margin-bottom: 15px;
+}
+
+.columnContainer {
+  padding: "20px";
+}
+
+.itemsContainer {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  gap: 15px;
+  padding: 15px;
+  border-bottom: 1px solid grey;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.itemContainer p {
+  display: flex;
+  align-items: centr;
+}
+
+.itemContainer p svg {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.itemContainer svg {
+  fill: #f54652;
+  width: 22px;
+  height: 22px;
+}
+
+.iconDoing svg {
+  fill: #7252b7;
+}
+
+.iconDone svg {
+  fill: #20b1a9;
+}
+
+.todoFormConteiner {
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.todo {
+  text-transform: capitalize;
+}

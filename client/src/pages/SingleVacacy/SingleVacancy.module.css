@@ -1,0 +1,63 @@
+
+
+.contein {
+  color: #f5faff;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 75px 0;
+  gap: 15px;
+}
+.title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+
+.text {
+  text-transform: capitalize;
+}
+
+.deadlineHead {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contein p {
+  margin: 0px;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.contein p:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.contein p svg {
+  fill: #ff9f3e;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.headerEdit {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 664px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

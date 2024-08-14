@@ -1,0 +1,159 @@
+h1 {
+  font-size: 38px;
+  font-weight: 400;
+  color: #f5faff;
+  line-height: normal;
+}
+h2 {
+  font-weight: 300;
+  color: #000;
+}
+
+.headerMain {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 5px;
+}
+
+.demo-logo-vertical {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.logo {
+  height: 70%;
+  widht: 70%;
+}
+
+.infoIcon {
+  margin-right: 10px;
+  font-size: 36px;
+  color: #ff9f3e;
+  animation: pulse 1s infinite;
+}
+
+.infoIcon:hover {
+  animation: pulse 1s infinite;
+}
+
+.bacgroundWraoer {
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.smallIcon > svg {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.mainButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px 17px;
+  color: #000;
+  font-size: 18px;
+  transition: transform 0.1s ease-in-out;
+  font-weight: 300;
+}
+
+.mainButton:hover {
+  background-color: #2b558c;
+  color: #f5faff;
+  border-color: transparent;
+}
+
+.loginForm {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 30px 50px;
+}
+
+.iconButtons {
+  margin-right: 10px;
+}
+
+.secandaryButton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 8px 14px;
+  color: #000;
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+  font-weight: 300;
+}
+.secandaryButton:hover {
+  background-color: #2b558c;
+  color: #f5faff;
+  border-color: #2b558c;
+}
+
+.footerLinkConteiner {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footerConteiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  margin-top: 50px;
+  border-top: 1px solid #000;
+}
+
+.registrAgrrLink {
+  color: #007cf4;
+  margin-left: 3px;
+}
+
+.registrAgrrLink:hover {
+  color: #c75c10;
+}
+
+.form-showed-buttons {
+  font-size: 36px;
+  font-weigh: 400;
+  color: #ddeaf6;
+}
+
+.form-showed-buttons:hover {
+  color: #ff9f3e;
+}
+
+.editor-statusbar {
+  color: #000;
+}
+
+@media screen and (max-width: 1000px) {
+  .headerMain {
+    font-size: 32px;
+  }
+}

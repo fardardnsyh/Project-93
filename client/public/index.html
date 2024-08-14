@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/images/logo_orange.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="icon" href="%PUBLIC_URL%/images/logo_orange.svg" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Job-Search-Tracker</title>
+    <style>
+      .warning-message {
+        display: none;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #4c9aff;
+        color: #000;
+        border: 1px solid #4c9aff;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div class="warning-message" id="warningMessage">
+      <p>
+        This app works best on larger screens. Consider using a desktop for
+        optimal experience.
+      </p>
+      <p>
+        If you have a mobile device, you can download our mobile app
+        <a href="#">here</a>.
+      </p>
+    </div>
+
+    <script>
+      // Получаем элемент предупреждения
+      var warningMessage = document.getElementById("warningMessage");
+      var reactApp = document.getElementById("root");
+
+      // Проверяем ширину экрана при загрузке страницы и при изменении размеров окна
+      function checkScreenWidth() {
+        if (window.innerWidth < 700) {
+          // Если ширина экрана меньше 800 пикселей, показываем предупреждение
+          warningMessage.style.display = "block";
+          reactApp.style.display = "none";
+        } else {
+          // Иначе скрываем предупреждение
+          warningMessage.style.display = "none";
+          reactApp.style.display = "block";
+        }
+      }
+
+      // Вызываем функцию при загрузке страницы и при изменении размеров окна
+      window.addEventListener("load", checkScreenWidth);
+      window.addEventListener("resize", checkScreenWidth);
+    </script>
+  </body>
+</html>

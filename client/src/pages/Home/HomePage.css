@@ -1,0 +1,92 @@
+.cloud {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #000;
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(#f2f2f2 70%, #e5e5e5);
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  font-family: "Spline Sans", sans-serif;
+  font-size: 20px;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.cloud svg {
+  fill: #e6eff2;
+  width: 1em;
+  height: 1em;
+}
+
+.cloud.visible {
+  opacity: 1;
+}
+
+.cloud:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.cloud .icon {
+  background-color: #8bd0ca;
+  border-radius: 60%;
+  padding: 8px
+}
+
+.cloud:hover .icon {
+  background-color: #ff9f3e;
+}
+
+.homeButton .btn {
+  background-color: #ff9f3e;
+  border-radius: 60%;
+  padding: 8px;
+  margin-right: 10px;
+  animation: pulse 1s infinite;
+  color: #f5faff;
+}
+
+.homeButton {
+  position: absolute;
+  background-color: transparent;
+  width: 170px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px 17px;
+  color: #000;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.homeButton:hover {
+  background-color: #2b558c;
+  color: #f5faff;
+  border-color: transparent;
+  font-weight: 300;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@media screen and (max-width: 880px) {
+  .cloud {
+    
+    font-size: 18px;
+    
+  }
+  
+}

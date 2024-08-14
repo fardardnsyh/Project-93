@@ -1,0 +1,22 @@
+.icons {
+  color: white !important;
+  font-size: 26px !important;
+}
+
+.icons:hover {
+  color: #002140 !important;
+}
+
+.iconsBottom {
+  font-size: 22px !important;
+  color: white !important;
+}
+
+.iconsBottom:hover {
+  font-size: 22px !important;
+  color: #f4976c !important;
+}
+
+.popup {
+    background-color: transparent;
+}
